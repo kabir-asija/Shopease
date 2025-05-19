@@ -1,0 +1,147 @@
+// Products Data
+const products = [
+    {
+        id: 1,
+        title: "Wireless Bluetooth Earbuds",
+        price: 79.99,
+        originalPrice: 99.99,
+        discount: "20%",
+        category: "Electronics",
+        image: "https://store.storeimages.cdn-apple.com/4668/as-images.apple.com/is/airpods-4-anc-select-202409_FV1?wid=976&hei=916&fmt=jpeg&qlt=90&.v=1725502554118",
+        rating: 4.5,
+        reviews: 128,
+        description: "High-quality wireless earbuds with noise cancellation and long battery life."
+    },
+    {
+        id: 2,
+        title: "Smart Fitness Tracker",
+        price: 49.99,
+        originalPrice: 69.99,
+        discount: "29%",
+        category: "Electronics",
+        image: "https://images.snapmint.com/product_assets/images/000/884/294/large/open-uri20230530-8601-i6w382?1685428836",
+        rating: 4.2,
+        reviews: 95,
+        description: "Track your fitness goals with this smart tracker featuring heart rate monitoring and sleep tracking."
+    },
+    {
+        id: 3,
+        title: "Men's Casual Shirt",
+        price: 34.99,
+        originalPrice: 44.99,
+        discount: "22%",
+        category: "Fashion",
+        image: "https://www.zestmelange.com/cdn/shop/files/22201ST100153A_6.jpg?v=1737915382",
+        rating: 4.0,
+        reviews: 68,
+        description: "Comfortable and stylish casual shirt for men, perfect for any occasion."
+    },
+    {
+        id: 4,
+        title: "Women's Running Shoes",
+        price: 59.99,
+        originalPrice: 79.99,
+        discount: "25%",
+        category: "Fashion",
+        image: "https://cultstore.com/cdn/shop/files/LFJMEdMbVvAGRLDuj1eLmZBy.jpg?v=1726208453&width=5000",
+        rating: 4.7,
+        reviews: 153,
+        description: "Lightweight and comfortable running shoes with excellent support and cushioning."
+    },
+    {
+        id: 5,
+        title: "Modern Coffee Table",
+        price: 129.99,
+        originalPrice: 159.99,
+        discount: "19%",
+        category: "Home & Decor",
+        image: "https://www.dekorcompany.com/cdn/shop/files/WhatsApp_Image_2024-09-26_at_2.10.16_PM_9739721f-5b92-4995-a5e1-0f3cfc425571.jpg?v=1727353252",
+        rating: 4.3,
+        reviews: 42,
+        description: "Stylish modern coffee table with a wooden top and metal legs."
+    },
+    {
+        id: 6,
+        title: "Scented Candle Set",
+        price: 24.99,
+        originalPrice: 34.99,
+        discount: "29%",
+        category: "Home & Decor",
+        image: "https://goodmelts.co/cdn/shop/files/pinkkit-07.jpg?v=1725522597&width=713",
+        rating: 4.4,
+        reviews: 87,
+        description: "Set of 3 scented candles with long-lasting fragrance, perfect for creating a cozy atmosphere."
+    },
+    {
+        id: 7,
+        title: "Facial Skincare Set",
+        price: 39.99,
+        originalPrice: 59.99,
+        discount: "33%",
+        category: "Beauty & Health",
+        image: "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQqghplLq_UgkJOcJdyBWNJlA9L0UTA-1FATDhd13AZT_vv3_HXO7javxNqqlPC4FCFfDZZTomOnhIa_FL5R2ETVxxs-NggIjroiDz7aNfG8iF3EFCfMwLVj9s&usqp=CAc",
+        rating: 4.6,
+        reviews: 74,
+        description: "Complete skincare set including cleanser, toner, and moisturizer for all skin types."
+    },
+    {
+        id: 8,
+        title: "Men's Electric Shaver",
+        price: 69.99,
+        originalPrice: 89.99,
+        discount: "22%",
+        category: "Beauty & Health",
+        image: "https://winstonindia.com/cdn/shop/files/Groom360.png?v=1740045337&width=700",
+        rating: 4.1,
+        reviews: 56,
+        description: "High-performance electric shaver with multiple shaving modes and long battery life."
+    },
+    {
+        id: 9,
+        title: "Portable Bluetooth Speaker",
+        price: 39.99,
+        originalPrice: 59.99,
+        discount: "33%",
+        category: "Electronics",
+        image: "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSZnjQVQl3c9z--FC61JJpwR8GRsANPqd8QyVCCZhR8VYzpV7J0IocxCQegdDu7dsw0QVl0OMbDwD2E-SyGz8UItVHJptq4GPG_U62V1tgSNOoPkeGy8ZDM&usqp=CAc",
+        rating: 4.4,
+        reviews: 112,
+        description: "Waterproof portable speaker with incredible sound quality and 12-hour battery life."
+    },
+    {
+        id: 10,
+        title: "Stainless Steel Water Bottle",
+        price: 19.99,
+        originalPrice: 24.99,
+        discount: "20%",
+        category: "Home & Decor",
+        image: "https://thebetterhome.com/cdn/shop/files/510o4lWeAAL_d7894f94-77ce-4e6e-8712-55d04e090984.jpg?v=1733983955&width=493",
+        rating: 4.8,
+        reviews: 203,
+        description: "Eco-friendly, vacuum-insulated water bottle that keeps drinks cold for 24 hours or hot for 12 hours."
+    },
+    {
+        id: 11,
+        title: "Women's Leather Handbag",
+        price: 89.99,
+        originalPrice: 119.99,
+        discount: "25%",
+        category: "Fashion",
+        image: "https://www.thestrokesgallery.com/cdn/shop/files/AG2_3699copy2.jpg?v=1710418955&width=713",
+        rating: 4.5,
+        reviews: 67,
+        description: "Elegant leather handbag with multiple compartments and adjustable strap."
+    },
+    {
+        id: 12,
+        title: "Smart Home Assistant",
+        price: 79.99,
+        originalPrice: 99.99,
+        discount: "20%",
+        category: "Electronics",
+        image: "https://www.krasamo.com/wp-content/uploads/smart-speaker-house-control-innovative-technology-1024x683.jpg",
+        rating: 4.3,
+        reviews: 91,
+        description: "Voice-controlled smart home assistant that can play music, answer questions, and control smart home devices."
+    }
+]; 
